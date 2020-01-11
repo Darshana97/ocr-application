@@ -7,14 +7,14 @@
 <img mat-card-image src="{{imageUrl}}" alt="Photo of a Shiba Inu">
     <mat-card-content>
 
-      <mat-spinner *ngIf="isLoading"></mat-spinner>
+      <mat-spinner *ngIf="isLoading" style="margin-left: 150px;"></mat-spinner>
       <p>
         {{imageText}}
       </p>
     </mat-card-content>
     <mat-card-actions>
         <input type="file" (change)="onUpload($event)" #upload style="display: none;" />
-        <button (click)="upload.click()" mat-raised-button color="primary">Select Image</button>
+        <button (click)="upload.click()" mat-raised-button color="primary" style="margin-left: 100px;"Select Image</button>
         <button (click)="getResult()" mat-raised-button style="background-color: greenyellow;">Upload</button>
         
     </mat-card-actions>
