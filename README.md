@@ -1,1 +1,1 @@
-# ocr-application
+# ocr-application frontend
